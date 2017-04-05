@@ -43,6 +43,14 @@
           'libraries': [
             '<!@(pkg-config  --libs-only-l --libs-only-other dbus-1)'
           ]
+        }],
+        ['OS=="win"', {
+        	'cflags': [
+        		'-std=c++11'
+        	],
+        	'libraries': [
+        		'-ldbus-1.lib'
+        	]
         }]
       ]
     }

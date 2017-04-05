@@ -7,6 +7,14 @@
 
 #include "introspect.h"
 
+#ifdef _MSC_VER
+#	define strcasecmp _stricmp
+#endif
+
+#ifdef interface
+#	undef interface
+#endif
+
 namespace Introspect {
 
 	using namespace node;

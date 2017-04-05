@@ -23,9 +23,6 @@
   "dependencies": {
     "nan": "^2.1.0"
   },
-  "os": [
-    "!win32"
-  ],
   "devDependencies": {
     "tap": "^10.0.2"
   }

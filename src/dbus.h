@@ -5,6 +5,10 @@
 #include <string>
 #include <nan.h>
 
+#ifdef interface
+#	undef interface
+#endif
+
 namespace NodeDBus {
 
 	using namespace node;
